@@ -3,6 +3,17 @@ import unittest
 import sys
 from types import *
 
+
+def try_except(string):
+    while True:
+        try:
+            value = float(input(string))
+            break
+        except ValueError:
+            print("Please insert a valid numeric value!")
+
+    return value
+    
 while True:
     print('1. Calculate BMI')
     print('2. Calculate Distance Formula')
