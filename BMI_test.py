@@ -32,6 +32,18 @@ class Feet_to_inches_testing(unittest.TestCase):
     def test_fti3(self):
         self.assertEqual(ft_to_in(4), 48)
     
+#done by Corey Henry
+
+class Divide_testing(unittest.TestCase):
+    def test_d1(self):
+        self.assertEqual(divide(4 , 2), 2)
+
+    def test_d2(self):
+        self.assertEqual(divide(20 , 5), 4)
+
+    def test_d3(self):
+        self.assertEqual(divide(75 , 3), 25)
+
 
 if __name__ == '__main__':
     unittest.main(exit=False)
