@@ -1,6 +1,10 @@
 import math
 
 #evan
+def convert_inch_meters(inch):
+    return (inch * 0.025)
+
+#evan
 def convert_lb_kg(lb):
     return (lb * 0.45)
 #corey
