@@ -21,6 +21,37 @@ def try_except(string):
 
     return value
 
+
+def try_except_allow_negative(string):
+    while True:
+        try:
+            value = float(input(string))
+            break
+        except ValueError:
+            print("ERROR: Please enter a valid numeric value!")
+
+    return value
+
+
+def main_bmi():
+    print("\nPlease enter your current height and weight.")
+    feet = try_except("  (feet): ")
+    inches = try_except("(inches): ")
+    weight = try_except("(pounds): ")
+    bmi = get_bmi(feet, inches, weight)
+
+    print("     BMI:", "%.1f" % bmi)
+    if bmi >= 30:
+        print("Category: Obese")
+    elif 25 <= bmi < 30:
+        print("Category: Overweight")
+    elif 18.5 <= bmi < 25:
+        print("Category: Normal Weight")
+    elif bmi < 18.5:
+        print("Category: Underweight")
+    print("")
+
+
 def retirement_plan():
     age = try_except("\nPlease enter your current age: ")
     annual_salary = try_except("Please enter your current salary: ")
@@ -33,6 +64,18 @@ def retirement_plan():
         print("Sorry, goal not met!\n")
     else:
         print("Your goal will be met at the age of:", int(goal_age), "\n")
+
+
+def calculate_distance():
+    x1 = try_except_allow_negative("Please enter a value for x1: ")
+    y1 = try_except_allow_negative("Please enter a value for y1: ")
+    x2 = try_except_allow_negative("Please enter a value for x2: ")
+    y2 = try_except_allow_negative("Please enter a value for y2: ")
+
+    distance = distance_formula(x1, y1, x2, y2)
+    print("The distance is: ", "%.2f" % distance)
+    print("")
+
 
 def email_verifier():
     while True:
@@ -61,10 +104,10 @@ def main():
         choice = (input('Please choose an option: '))
 
         if choice == '1':
-            #main_bmi()
+            main_bmi()
             continue
         elif choice == '2':
-            #calculate_distance()
+            calculate_distance()
             continue
         elif choice == '3':
             retirement_plan()
