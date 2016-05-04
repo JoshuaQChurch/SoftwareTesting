@@ -2,12 +2,12 @@
 ## Assignment 4 - Unit Tests and TDD ##
 
 #### Team Members: ####
-Joshua Church
-Jeffry Herzog
-Jon Williams
-Evan Farry
-Johnny Pongetti
-Corey Henry
+Joshua Church<br>
+Jeffry Herzog<br>
+Jon Williams<br>
+Evan Farry<br>
+Johnny Pongetti<br>
+Corey Henry<br>
 
 #### How to navigate ####
 **STEP 1:** Download the following files:
