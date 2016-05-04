@@ -9,8 +9,8 @@ Evan Farry<br>
 Johnny Pongetti<br>
 Corey Henry<br>
 
-#### How to navigate ####
-**STEP 1:** Download the following files:
+#### HOW TO USE THE CODE ####
+**STEP 1:** Download the following files: <br>
 	- def_BMI.py <br>
 	- def_DistanceFormula.py <br>
 	- def_Retirement.py <br>
@@ -20,6 +20,7 @@ Corey Henry<br>
 	- Unit_Tests_Retirement.py <br>
 	- Unit_Tests_EmailVerifier.py <br>
 	- QA4_Main.py <br>
+	
 **STEP 2:** Make sure all of the files above are held within the same file location. <br>
 **STEP 3:** Open QA4_Main.py and run the program. <br>
 **STEP 4:** Follow the steps on screen. <br>
@@ -28,5 +29,5 @@ Corey Henry<br>
 					   as well. The texts above the main menu is the output 
 					   from the unit tests. 
 	
-#### Example Testcase: ####
+#### EXAMPLE TESTCASE: ####
 http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137
