@@ -31,6 +31,24 @@ class Feet_to_inches_testing(unittest.TestCase):
 
     def test_fti3(self):
         self.assertEqual(ft_to_in(4), 48)
+
+    #Jon Williams
+
+    def test_decimal_feet(self):
+    	self.assertEqual(ft_to_in(1.5), 18)
+
+    def test_negative_inputF2I(self):
+        self.assertRaises(OutOfRangeError,ft_to_in, -1)
+
+    def test_negative_inputI2M(self):
+        self.assertRaises(OutOfRangeError,convert_inch_meters, -1)
+        
+    def test_negative_inputL2K(self):
+        self.assertRaises(OutOfRangeError,convert_lb_kg, -1)
+
+    
+
+    
     
 #done by Corey Henry
 
@@ -43,6 +61,20 @@ class Divide_testing(unittest.TestCase):
 
     def test_d3(self):
         self.assertEqual(divide(75 , 3), 25)
+        
+#Jon Williams
+
+    def test_negative_inputDivde(self):
+        self.assertRaises(OutOfRangeError,divide, -1, 0)
+
+    def test_negative_inputDivde(self):
+        self.assertRaises(OutOfRangeError,divide, 0, -1)
+
+    def test_negative_inputDivde(self):
+        self.assertRaises(OutOfRangeError,divide, -1, -1)
+
+    def test_negative_inputDivde(self):
+        self.assertRaises(DivideByZero,divide, 1, 0)
 
 
 if __name__ == '__main__':

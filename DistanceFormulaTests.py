@@ -119,6 +119,40 @@ class DistFormTest(unittest.TestCase):
         result = distance_formula(0, 0, 0, 0)
         self.assertEqual(result, 0)
 
+    #Test by Jon Williams
+
+    def test_distanceFormulaIn2ndQuadrant(self):
+        result = distance_formula(-1, 0, -2, 0)
+        self.assertEqual(result, 1)
+
+    def test_distanceFormulaIn3rdQuadrant(self):
+        result = distance_formula(-1, -1, -2, -1)
+        self.assertEqual(result, 1)
+
+    def test_distanceFormulaIn4thQuadrant(self):
+        result = distance_formula(1, -1, 2, -1)
+        self.assertEqual(result, 1)
+
+    def test_distanceFormulaFrom2to3Quad(self):
+        result = distance_formula(-1, 1, -1, -1)
+        self.assertEqual(result, 2)
+        
+    def test_distanceFormulaFrom3to4Quad(self):
+        result = distance_formula(-1, -1, 1, -1)
+        self.assertEqual(result, 2)
+
+    def test_distanceFormulaFrom4to1Quad(self):
+        result = distance_formula(1, 1, -1, -1)
+        self.assertAlmostEqual(result, 2.8284271)
+
+    def test_distanceFormulaFrom1to3Quad(self):
+        result = distance_formula(1, 1, -1, -1)
+        self.assertAlmostEqual(result, 2.8284271)
+
+    def test_distanceFormulaFrom2to4Quad(self):
+        result = distance_formula(-1, 1, 1, -1)
+        self.assertAlmostEqual(result, 2.8284271)
+
 
         
 if __name__ == '__main__':
