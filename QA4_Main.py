@@ -30,10 +30,24 @@ def retirement_plan():
     goal_age = retirement(age, annual_salary, percentage_saved, goal)
 
     if goal_age >= 100:
-        print("Sorry, goal not met!")
+        print("Sorry, goal not met!\n")
     else:
         print("Your goal will be met at the age of:", int(goal_age), "\n")
 
+def email_verifier():
+    while True:
+        enteredEmail = str(input('Enter e-mail to be verified: '))
+        
+        if verifyAtSymbol(enteredEmail) and verifyDotSymbol(enteredEmail) and verifyDomain(enteredEmail) and verifyContent(enteredEmail):
+            print(enteredEmail, "is a Valid Email\n")
+        else:
+            print(enteredEmail, "is an Invalid Email\n")
+            
+        print("Would you like to verify another email address?")
+        emailMenu = input ("Enter 'y' for yes, otherwise enter anything else to return to the main menu: ")
+        
+        if (emailMenu != 'y'):
+            break
 
 
 def main():
@@ -54,10 +68,8 @@ def main():
             continue
         elif choice == '3':
             retirement_plan()
-            continue
         elif choice == '4':
-            #email_verifier()
-            continue
+            email_verifier()
         else:
             sys.exit()
 

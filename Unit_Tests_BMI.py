@@ -1,7 +1,7 @@
 import math
 import unittest
 import sys
-from BMI import *
+from def_BMI import *
 from types import *
 
 #done by Corey Henry
