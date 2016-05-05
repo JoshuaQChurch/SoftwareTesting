@@ -7,6 +7,12 @@ from def_Retirement import *
 from def_DistanceFormula import *
 from def_EmailVerifier import *
 
+# Import test cases
+from Unit_Tests_BMI import *
+from Unit_Tests_DistanceFormula import *
+from Unit_Tests_EmailVerifier import *
+from Unit_Tests_Retirement import *
+
 
 def try_except(string):
     while True:
@@ -149,6 +155,8 @@ def main():
         elif choice == '4':
             email_verifier()
             print("")
+        elif choice == '5':
+            unittest.main(exit=False)
         else:
             sys.exit()
 
