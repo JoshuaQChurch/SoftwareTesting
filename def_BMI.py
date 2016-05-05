@@ -47,5 +47,5 @@ def divide(value1,value2):
 def get_bmi(feet, inches, pounds):
     weight = convert_lb_kg(pounds)
     height = ft_to_in(feet) + inches
-    height =convert_inch_meters(height)
+    height = convert_inch_meters(height)
     return divide(weight, square(height))
