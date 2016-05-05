@@ -64,16 +64,16 @@ class Divide_testing(unittest.TestCase):
         
 #Jon Williams
 
-    def test_negative_inputDivde(self):
+    def test_negative_inputDivde_1(self):
         self.assertRaises(OutOfRangeError,divide, -1, 0)
 
-    def test_negative_inputDivde(self):
+    def test_negative_inputDivde_2(self):
         self.assertRaises(OutOfRangeError,divide, 0, -1)
 
-    def test_negative_inputDivde(self):
+    def test_negative_inputDivde_3(self):
         self.assertRaises(OutOfRangeError,divide, -1, -1)
 
-    def test_negative_inputDivde(self):
+    def test_negative_inputDivde_4(self):
         self.assertRaises(DivideByZero,divide, 1, 0)
 
 

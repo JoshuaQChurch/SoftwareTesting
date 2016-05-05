@@ -18,10 +18,10 @@ class TakePercentage(unittest.TestCase):
         self.assertEqual(take_percentage(115, 0), 0)
 
     #Jon Williams
-    def test_negative_input(self):
+    def test_negative_input_1(self):
         self.assertRaises(OutOfRangeError,take_percentage, -1, .1)
         
-    def test_negative_input(self):
+    def test_negative_input_2(self):
         self.assertRaises(OutOfRangeError,take_percentage, 1, -.1)
         
     
@@ -40,10 +40,10 @@ class Double(unittest.TestCase):
         self.assertEqual(double(0), 0)
 
     #Jon Williams
-    def test_negative_input(self):
+    def test_negative_input_1(self):
         self.assertRaises(OutOfRangeError,double, -1)
 
-    def test_negative_input(self):
+    def test_negative_input_2(self):
         self.assertRaises(OutOfRangeError,aging, -1)
 
     def test_negative_input_for_goal(self):

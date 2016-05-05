@@ -139,6 +139,7 @@ def main():
         print('2. Calculate Distance Formula')
         print('3. Calculate Retirement')
         print('4. Verify Emails')
+        print('5. Run Tests')
         print('Enter anything else to exit.\n')
 
         choice = (input('Please choose an option: '))
