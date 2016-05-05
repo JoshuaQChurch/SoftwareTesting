@@ -1,6 +1,10 @@
 # Software Testing and Quality Assurance #
 ## Assignment 4 - Unit Tests and TDD ##
 
+## UPDATE AS OF 05/05/2016 ##
+Alright, team, we are officially done. Thanks again for everything. Have a great summer! 
+- Josh
+
 #### Team Members: ####
 Joshua Church<br>
 Jeffry Herzog<br>
@@ -26,9 +30,6 @@ Corey Henry<br>
 **STEP 4:** Open QA4_Main.py and run the program. <br>
 **STEP 5:** Follow the steps on screen. <br>
 
-**IMPORTANT NOTES:** <br>When the program is executed, the unit test will run
-					   as well. The texts above the main menu is the output 
-					   from the unit tests. 
 	
 #### EXAMPLE TESTCASE: ####
 http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137
